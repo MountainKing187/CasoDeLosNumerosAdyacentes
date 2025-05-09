@@ -40,10 +40,10 @@ class casoAdyacentesTest {
     }
 
     @Test
-    void array1valor() {
-        int[] arreglo = {1};
+    void arraygrande() {
+        int[] arreglo = {10,100,10,50,20};
 
-        assertEquals(0,casoAdyacentes.productoAdayacentes(arreglo));
+        assertEquals(1000,casoAdyacentes.productoAdayacentes(arreglo));
     }
 
 }
