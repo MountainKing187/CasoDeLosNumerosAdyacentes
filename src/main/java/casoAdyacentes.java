@@ -1,11 +1,11 @@
 public class casoAdyacentes {
 
     public static int productoAdayacentes(int[] arreglo) {
-
-        validacionArreglo(arreglo);
-
         int mayorProducto = Integer.MIN_VALUE;
         int productoActual;
+
+        try {
+        validacionArreglo(arreglo);
 
         for (int i = 0; i < arreglo.length - 1; i++) {
             productoActual = arreglo[i] * arreglo[i + 1];
@@ -14,6 +14,10 @@ public class casoAdyacentes {
             }
         }
         return mayorProducto;
+        } catch (IllegalArgumentException iae){
+            System.out.println("Error: "+iae.getMessage());
+            return 0;
+        }
     }
 
     public static void validacionArreglo(int[] arreglo) {
