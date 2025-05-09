@@ -6,8 +6,8 @@ public class casoAdyacentes {
         if (arreglo == null) {throw new IllegalArgumentException("El arreglo no puede ser null");}
         int mayorProducto = Integer.MIN_VALUE;
         int productoActual;
-        for (int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i] > 1000 || arreglo[i] < -1000){
+        for (int i : arreglo) {
+            if (i > 1000 || i < -1000) {
                 throw new IllegalArgumentException("Al menos un elemento del array es mayor que 1000 o menor que -1000");
             }
         }
