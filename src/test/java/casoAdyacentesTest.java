@@ -40,7 +40,7 @@ class casoAdyacentesTest {
     }
 
     @Test
-    void arraygrande() {
+    void arraymixto() {
         int[] arreglo = {-2,2,-6,5,-3};
 
         assertEquals(-4,casoAdyacentes.productoAdayacentes(arreglo));
